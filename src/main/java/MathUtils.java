@@ -1,6 +1,7 @@
 
 import System;
-
+// This class contains functions for finding 
+// Greatest Common Divisor and Least Common Multiple
 public class MathUtils {
     public static int gcd(int a, int b) {
         if (a == 0) {
