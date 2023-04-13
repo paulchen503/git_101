@@ -7,6 +7,8 @@ import org.opencv.imgproc.Imgproc;
 
 public class TestOpenCv {
     public static void main(String[] args) {
+    	//use eclipse to open project
+    	//use this article to set up https://medium.com/javarevisited/setting-up-opencv-for-java-44c6eb6ae7e1
         // Load the image
     	System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         Mat image = Imgcodecs.imread("C:\\Red.jpg");
