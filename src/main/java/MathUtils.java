@@ -16,7 +16,7 @@ public class MathUtils {
 
     public static void main(String[] args) {
         System.out.println("Hello World");
-        System.out.println("GCD(10, 24)=", gcd(10, 24));
-        System.out.println("LCM(10, 24)=", lcm(10, 24));
+        System.out.println("GCD(10, 24)="+ gcd(10, 24));
+        System.out.println("LCM(10, 24)="+ lcm(10, 24));
     }
 }
