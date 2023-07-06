@@ -4,7 +4,7 @@ public class MagicNumberConverter {
 
     public int binaryToDecimal(String binary)
     {
-        if (binary=="0") {
+        if (binary == "0") {
                return 0;
         }else if(binary == "1") {
             return 1;
