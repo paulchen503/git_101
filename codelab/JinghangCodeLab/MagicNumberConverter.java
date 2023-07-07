@@ -32,11 +32,13 @@ public class MagicNumberConverter {
         int multiple = 1;
         int sum = 0;
         int subtractIfNegative;
+
         if(isNegative == true){
             subtractIfNegative = 0;
         } else{
             subtractIfNegative = -1;
         }
+        
         for (int i = length; i > subtractIfNegative; i--) {
             int num = Character.getNumericValue(binary.charAt(i));
             int val = multiple * num;
