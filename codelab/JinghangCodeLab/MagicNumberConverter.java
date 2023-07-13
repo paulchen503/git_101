@@ -2,10 +2,10 @@ package JinghangCodeLab;
 
 public class MagicNumberConverter {
 
-    public static int binaryToDecimal(String binary) {
+    public static int binaryToDecimal(String binary) throws Exception {
         if (Double.parseDouble(binary) > Integer.MAX_VALUE){
-            System.out.println("Out of Range not in Integer Range");
-            return 0;
+            throw new IllegalArgumentException("Out of Range");
+
         }
         // Edge cases
         if (binary == "0") {
@@ -14,8 +14,7 @@ public class MagicNumberConverter {
 
         for (int i = 0; i < binary.length(); i++) {
             if (binary.charAt(i) == '.') {
-                System.out.println("Cannot Input Decimals");
-                return 0;
+                throw new IllegalArgumentException("Cannot input Decimals");
             }
         }
 
